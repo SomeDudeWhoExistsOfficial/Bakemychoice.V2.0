@@ -1,2 +1,2 @@
 # Bakemychoice.V2.0
-2.0 (improoved version) of my old website
+2.0 (improved version) of my old website
