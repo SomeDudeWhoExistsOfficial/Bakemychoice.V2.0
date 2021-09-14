@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap);
 
 h1 {
  font-family: Dancing Script;
@@ -9,10 +10,14 @@ img {
  border: 5px solid black;
 }
 h2 {
- font-family: cursive;
- font-size: 150%;
+ font-family: Yanone Kaffeesatz;
+ font-size: 200%;
  color: white;
 }
 body {
  background-color: black;
+} 
+br {
+ display: block;
+ margin-bottom: 1em;
 }
