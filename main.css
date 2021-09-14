@@ -1,11 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap);
 
-h1 {
- font-family: Dancing Script;
- font-size: 400%;
- color: white;
-}
+
 img {
  border: 5px solid black;
 }
@@ -20,4 +16,9 @@ body {
 br {
  display: block;
  margin-bottom: 1em;
+}
+.header {
+ font-size: 300%;
+ position: center;
+ font-family: Dancing Script;
 }
