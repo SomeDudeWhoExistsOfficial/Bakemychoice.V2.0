@@ -7,6 +7,7 @@ img {
 }
 body {
  background-color: black;
+ color: white;
 } 
 br {
  display: block;
@@ -19,9 +20,42 @@ br {
 }
 .text-below-img {
  font-family: MedievalSharp;
- color: white;
 }
 .link {
  font-size: 200%;
  text-decoration: none; 
+}
+.abtus {
+ font-size: 180%;
+}
+img {
+ margin: 5px;
+}
+.buton{
+ position: relative;
+ border: 1px solid black;
+ font-family: dancing script;
+ font-size: 200%;
+ font-weight: 800;
+ background-color: aliceblue;
+ bottom: -50px;
+}
+button:hover {
+ background-color: black;
+ color: white;
+}
+button:active {
+ color: black;
+ background-color: black;
+ border: 1px solid black;
+}
+.midel {
+ position: relative;
+ left: 40px;
+}
+.darkmode {
+ background-color: white;
+ color: black;
+ font-weight: 700;
+ 
 }
