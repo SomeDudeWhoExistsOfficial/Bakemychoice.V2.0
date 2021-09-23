@@ -8,34 +8,21 @@
   <link rel="shortcut icon" type="image/jpg" href="images/e.png" width="16" height="16"/>
  </head>
  <script>
-   function darkMode() {
-     document.body.classList.toggle("darkmode");
-   }
  </script>
  <body>
-  <div class="header text-center p-3 mb-2 bg-primary text-white">BakeMyChoice</div>
-  <div class="jumbotron text-center">
-   <br><br> 
-
-   <div class="container">
-    <div class="row">
-      <a href="boycakes.html" class="col-6 col-sm-3 midel text-below-img link">Boy Cakes</a>
-      <a href="#" class="col-6 col-sm-5 text-below-img link midel">General Cakes</a>
-      <a href="#" class="col-6 col-sm-3 text-below-img link midel">Girl Cakes</a>
-
-       <!-- Force next columns to break to new line -->
-       <div class="w-100"></div>
-   
-       <a href="boycakes.html" class="col-6 midel col-sm-3"><img src="images\39752064_1066975283473621_3255878556634316800_n.jpg" alt="Cake (NOT LOADING)" width="240" height="250"></a>
-       <a href="#" class="col-6 col-sm-5 img midel"><img src="images\188335810_169914555136378_2858621600242770747_n.jpg" alt="Cake (NOT LOADING)" width="240" height="250"></a>
-       <a href="#" class="col-6 col-sm-3 midel"><img src="images\39509799_1063600060477810_5164112176692068352_n.jpg" alt="Cake (NOT LOADING)" width="240" height="250"></a>
-      </div>
-    <button type="button" class="buton" onclick="darkMode()">
-      Toggle Dark Mode
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand navbarMods" href="#">BakeMyChoice</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    
-    </div>
-
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        </ul>
+      </nav>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
  </body>
 </html>

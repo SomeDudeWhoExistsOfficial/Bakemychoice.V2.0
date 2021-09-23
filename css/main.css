@@ -1,61 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap);
 
-
-img {
- border: 5px solid pink;
-}
-body {
- background-color: black;
- color: white;
-} 
-br {
- display: block;
- margin-bottom: 1em;
-}
-.header {
- font-size: 300%;
- position: center;
+.navbarMods {
  font-family: Dancing Script;
-}
-.text-below-img {
- font-family: MedievalSharp;
-}
-.link {
  font-size: 200%;
- text-decoration: none; 
-}
-.abtus {
- font-size: 180%;
-}
-img {
- margin: 5px;
-}
-.buton{
- position: relative;
- border: 1px solid black;
- font-family: dancing script;
- font-size: 200%;
- font-weight: 800;
- background-color: aliceblue;
- bottom: -50px;
-}
-button:hover {
- background-color: black;
- color: white;
-}
-button:active {
- color: black;
- background-color: black;
- border: 1px solid black;
-}
-.midel {
- position: relative;
- left: 40px;
-}
-.darkmode {
- background-color: white;
- color: black;
- font-weight: 700;
- 
 }
