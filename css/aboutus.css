@@ -24,6 +24,16 @@ button {
  margin-top: -20px;
 }
 .bg {
- background-color: black;
  margin-top: 20px;
+ border-radius: 20px;
+ border: 1px solid grey;
+}
+.text-purple {
+ color: #210024;
+}
+.c-title-s {
+ font-size: 30px;
+}
+.c-text-s {
+ font-size: 20px;
 }
