@@ -1,7 +1,19 @@
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap);
 
+.darkmode {
+ background-color: black;
+ color: white;
+}
+button {
+ background-color: transparent;
+ border: white solid 1px;
+}
+.nav-link {
+ font-size: 150%;
+ font-family: Architects Daughter;
+ margin: 5px;
+}
 .navbarMods {
  font-family: Dancing Script;
  font-size: 200%;
@@ -11,16 +23,7 @@
  margin-bottom: -20px;
  margin-top: -20px;
 }
-.nav-link {
- font-size: 150%;
- font-family: Architects Daughter;
- margin: 5px;
-}
-button {
- background-color: transparent;
- border: white solid 1px; 
-}
-.darkmode {
+.bg {
  background-color: black;
- color: white;
+ margin-top: 20px;
 }
