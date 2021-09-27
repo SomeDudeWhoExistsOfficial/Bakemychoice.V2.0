@@ -24,3 +24,9 @@ button {
  background-color: black;
  color: white;
 }
+.c-title-s {
+ font-size: 30px;
+}
+.c-text-s {
+ font-size: 20px;
+}
