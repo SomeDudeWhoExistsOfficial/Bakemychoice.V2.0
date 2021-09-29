@@ -30,3 +30,19 @@ button {
 .c-text-s {
  font-size: 20px;
 }
+.dr-item{
+ font-family: Architects Daughter;
+ color: black;
+ font-weight: bold;
+ font-size: 1rem;
+}
+.dr-meno {
+ background-color: grey;
+}
+body, html {
+ position:relative;
+ top:0;
+ bottom:0;
+ left:0;
+ right:0;
+}

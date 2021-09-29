@@ -12,6 +12,7 @@
 
  </head>
  <body>
+  <span>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
    <a class="navbar-brand navbarMods bigmargin" href="index.html">BakeMyChoice</a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,27 +21,32 @@
  
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
      <ul class="navbar-nav mr-auto">
-       <li>
+      <li>
          <a class="nav-link text-white" href="aboutus.html">About Us (current)</a>
        </li>
-       <li>
-         <a class="nav-link text-white" href="boycakes.html">Boy Cakes</a>
-       </li>
-       <li>
-         <a class="nav-link text-white" href="girlcakes.html">Girl Cakes</a>
-       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Cakes
+        </a>
+        <div class="dropdown-menu dr-meno" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item dr-item" href="boycakes.html">Boy Cakes</a>
+          <a class="dropdown-item dr-item" href="girlcakes.html">Girl Cakes</a>
+        </div>
+      </li> 
        <li>
          <button class="nav-link text-white " onclick="document.body.classList.toggle('darkmode')">Toggle Dark Mode</button>
        </li>
        </ul>
      </nav>
+    </span>
      <center>
-     <div class="card text-purple bg-secondary bg" style="width: 70rem; height: 17rem">
-      <div class="card-body">
-        <h5 class="c-title-s">About Us:</h5>
-        <p class="c-text-s">We are a small home bakery</p>
-      </div>
-    </div>
+      
+      <main role="=" class="container">
+        <div class="jumbotron e">
+          <h1>About Us: </h1>
+          <p class="lead">This is us</p>
+        </div>
+      </main>
   </center>
  </body>
 </html>
