@@ -36,9 +36,6 @@ button {
  font-weight: bold;
  font-size: 1rem;
 }
-.dr-meno {
- background-color: grey;
-}
 body, html {
  position:relative;
  top:0;
