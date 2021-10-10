@@ -45,7 +45,7 @@ body, html {
  left:0;
  right:0;
 }
-.jumbotron{font-size:15px;color:black;padding:2rem 1rem;margin-bottom:2rem;background-color:grey;border-radius:.3rem}
+.jumbotron{font-size:15px;color:black;padding:2rem 1rem;margin-bottom:1rem;background-color:grey;border-radius:.3rem}
 
 .jumbotron-fluid{padding-right:0;padding-left:0;border-radius:0}
 a {
@@ -53,13 +53,17 @@ a {
  color: #000;
 }
 .btn {
- font-family: MedievalSharp;
+ font-family: Architects Daughter;
 }
 h1 {
  font-size: 35px;
  font-family: Architects Daughter;
 }
 p {
- font-size: 1.9rem;
+ font-size: 35px;
+ margin-top: 10px;
  font-family: Architects Daughter;
+}
+.img {
+ border: 5px solid #555;
 }
