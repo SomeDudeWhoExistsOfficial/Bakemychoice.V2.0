@@ -46,10 +46,10 @@
         <div class="link jumbotron" style="margin-top: 5px;">
             <center><h1 style=" margin-bottom: 10px; font-size: 50px;">Boy Cakes:</h1></center>
             <br>
-            <img style="margin-top:0px;" class="img" src="images/boy1.jpg" height="350">
+            <img style="margin-top:0px;" class="img" src="images/Placeholder.png" height="350">
             <p id="txt"></p>
-            <p>Pikachu Cake!</p>
             <button class="btn btn-primary">Next Image &rarr;</button>
+            <button class="btn bak btn-primary">Previous Image &larr;</button>
           </div>
   <script>
     var boyPics = [
@@ -58,10 +58,17 @@
   "images/general2.jpg",
   "images/girl1.jpg"
 ]
+    var textt = [
+    "Pikachu Cake",
+    "Flowered Cake!",
+    "Rosette",
+    "Dog Cake!"
+    ]
 
 var btn = document.querySelector('.btn');
 var img = document.querySelector('.img');
 var txt = document.getElementById('txt');
+var back = document.querySelector('.bak')
 var counter = 1;
 var textCounter = 1;
 btn.addEventListener('click', function() {
@@ -70,6 +77,25 @@ btn.addEventListener('click', function() {
    if (counter == 4) {
      counter = 0;
    }
+   txt.textContent = textt[textCounter]
+   textCounter = textCounter + 1;
+   if (textCounter == 4) {
+     textCounter = 0;
+   }
+
+});
+back.addEventListener('click', function() {
+  img.src = boyPics[counter]
+   counter = counter - 1;
+   if (counter < 1) {
+     counter = 4;
+   }
+   txt.textContent = textt[textCounter]
+   textCounter = textCounter - 1;
+   if (textCounter < 1) {
+     textCounter = 4;
+   }
+
 });
   </script>
  </body>
