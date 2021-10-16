@@ -42,14 +42,15 @@
         </li>
         </ul>
       </nav>  
-      <div class="jumbotron" style="margin-top: 5px;">
       <center>    
-        <h1 class="page-height" style="font-size: 40px; margin-bottom: 0px;">Boy Cakes:</h1>
-        <button style="font-size: 40px;" class="btn btn-muted bg-transparent float-right">&rarr;</button>          
+        <h1 class="page-height" style="margin-top:20px; font-size: 40px; margin-bottom: 0px;">Birthday Cakes:</h1>
+        </center>     
+            <center>
             <p id="txt">A milk chocolate and vanilla flavored Pikachu themed cake made for a birthday.</p>
             <img class="img" src="images/boy1.jpg" height="350">
           </center>
-          </div>
+          <div class="top-border-e"></div>
+          <button style="font-size: 40px;" class="buton btn btn-muted bg-transparent"><h1>Next</h1></button>     
   <script>
  var boyPics = [
   "images/boy1.jpg",
@@ -75,6 +76,9 @@ btn.addEventListener('click', function() {
    textCounter = textCounter + 1;
    if (textCounter == 2) {
      textCounter = 0;
+   }
+   if (counter === 2) {
+     img.height = "300";
    }
 
 });

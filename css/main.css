@@ -66,4 +66,17 @@ p {
 }
 .img {
  border: 5px solid #555;
+ width: 40%;
+ height: auto;
+}
+.buton {
+ position: relative;
+ float: right;
+ margin-right: -10px;
+}
+.top-border-e {
+ margin-bottom: -20%;
+}
+button::active {
+ border-color: transparent;
 }
