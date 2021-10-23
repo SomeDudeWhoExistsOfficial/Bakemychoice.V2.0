@@ -60,19 +60,18 @@ h1 {
  font-family: Architects Daughter;
 }
 p {
- font-size: 35px;
- margin-top: 10px;
+ font-stretch: auto;
+ margin-top: 1%;
  font-family: Architects Daughter;
 }
 .img {
  border: 5px solid #555;
- width: 40%;
+ width: 30%;
  height: auto;
 }
 .buton {
- position: relative;
- float: right;
  margin-right: -10px;
+ object-position: right top;
 }
 .top-border-e {
  margin-bottom: -20%;
