@@ -56,12 +56,11 @@ a {
  font-family: Architects Daughter;
 }
 h1 {
- font-size: 35px;
+ font-size: 4vw;
  font-family: Architects Daughter;
 }
 p {
- font-stretch: auto;
- margin-top: 1%;
+    font-size: 3.1vw;
  font-family: Architects Daughter;
 }
 .img {
