@@ -47,11 +47,10 @@
         </center>     
            
         <center>
-            <p id="txt">A milk chocolate and vanilla flavored Pikachu themed cake made for a birthday.</p>
-            <div class="bov">
-              <button style="font-size: 40px;" class="buton btn btn-muted bg-transparent"><h1>Next</h1></button>
-            </div>    
-            <img class="img" src="images/boy1.jpg" height="350">
+            <p id="txt">A milk chocolate and vanilla flavored Pikachu themed cake made for a birthday.</p>  
+            <button class="bln">
+              <img class="img" src="images/boy1.jpg" width="350">
+          </button>
           </center>
   <script>
  var boyPics = [
@@ -63,7 +62,7 @@
     "A unicorn themed cake"
     ]
 
-var btn = document.querySelector('.btn');
+var btn = document.querySelector('.bln');
 var img = document.querySelector('.img');
 var txt = document.getElementById('txt');
 var counter = 1;
@@ -78,9 +77,6 @@ btn.addEventListener('click', function() {
    textCounter = textCounter + 1;
    if (textCounter == 2) {
      textCounter = 0;
-   }
-   if (counter === 2) {
-     img.height = "300";
    }
 
 });
