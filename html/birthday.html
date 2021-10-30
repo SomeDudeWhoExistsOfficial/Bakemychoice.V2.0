@@ -41,25 +41,27 @@
           <button class="nav-link text-white " onclick="document.body.classList.toggle('darkmode')" href="#">Toggle Dark Mode</button>
         </li>
         </ul>
-      </nav>  
-      <center>    
-        <h1 class="page-height" style="margin-top:20px; font-size: 40px; margin-bottom: 0px;">Birthday Cakes:</h1>
-        </center>     
-           
-        <center>
-            <p id="txt">A milk chocolate and vanilla flavored Pikachu themed cake made for a birthday.</p>  
+      </nav>     
+        <h1 class="page-height" style="margin-left: 2vw;margin-top:20px; margin-bottom: 15px;">Birthday Cakes:</h1>
+<div class="contain">
+            <p id="txt">A milk chocolate and vanilla flavored Pikachu themed cake made for a birthday.</p>
+</div>  
             <button class="bln">
               <img class="img" src="images/boy1.jpg" width="350">
           </button>
-          </center>
+          <center>
+          <h6>Click The Image to View The Next Image</h6>
+        </center>
   <script>
  var boyPics = [
   "images/boy1.jpg",
-  "images/girl1.jpg"
+  "images/girl1.jpg",
+  "images/boy2.jpg"
 ]
     var textt = [
     "A milk chocolate and vanilla flavored Pikachu themed cake made for a birthday." ,
-    "A unicorn themed cake"
+    "A unicorn themed cake made for the birthday of a close friend",
+    "Simple vanilla blue ombre rosette smash cake, Mango flavored peppa family and barn themed cakes. Eggless chocolate cake with whipped chocolate ganache mini cup cakes. Siblings birthday celebration. Boys turning one and four.."
     ]
 
 var btn = document.querySelector('.bln');
@@ -70,12 +72,12 @@ var textCounter = 1;
 btn.addEventListener('click', function() {
    img.src = boyPics[counter]
    counter = counter + 1;
-   if (counter == 2) {
+   if (counter == 3) {
      counter = 0;
    }
    txt.textContent = textt[textCounter]
    textCounter = textCounter + 1;
-   if (textCounter == 2) {
+   if (textCounter == 3) {
      textCounter = 0;
    }
 

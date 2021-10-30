@@ -57,6 +57,7 @@ a {
 }
 h1 {
  font-size: 4vw;
+ margin-bottom: 30px;
  font-family: Architects Daughter;
 }
 p {
@@ -69,6 +70,10 @@ margin-right: 2vw;
  border: 5px solid lightgray;
  width: 25%;
  height: auto;
+ float: right;
+ position: absolute; 
+ top: 110px; 
+ right: 10px; 
 }
 .buton {
  margin-right: -10px;
@@ -81,7 +86,15 @@ button::active {
  border-color: transparent;
 }
 img:hover {
-    width: 40%;
+    width: 30%;
     height: auto;
     margin-bottom: 3vh;
+}
+h6 {
+    font-size: 1.4vw;
+    margin-top: 2vw;
+}
+.contain {
+    width: 50vw;
+    border: 5px solid lightgray;
 }
