@@ -44,5 +44,40 @@
        </li>
        </ul>
      </nav>
+     <h1 class="page-height" style="margin-left: 2vw;margin-top:20px; margin-bottom: 15px;">Birthday Cakes:</h1>
+     <div class="contain">
+                 <p id="txt">A milk chocolate and vanilla flavored Pikachu themed cake made for a birthday.</p>
+     </div>  
+                 <button class="bln">
+                  <img class="img" src="images/general1.jpg" width="350">
+     <script>
+      var boyPics = [
+      "images/general1.jpg",
+      "images/general2.jpg"
+     ]
+         var textt = [
+        "image 1",
+        "image 2"
+         ]
+     
+     var btn = document.querySelector('.bln');
+     var img = document.querySelector('.img');
+     var txt = document.getElementById('txt');
+     var counter = 1;
+     var textCounter = 1;
+     btn.addEventListener('click', function() {
+        img.src = boyPics[counter]
+        counter = counter + 1;
+        if (counter == 2) {
+          counter = 0;
+        }
+        txt.textContent = textt[textCounter]
+        textCounter = textCounter + 1;
+        if (textCounter == 2) {
+          textCounter = 0;
+        }
+     
+     });
+       </script>
  </body>
 </html>
