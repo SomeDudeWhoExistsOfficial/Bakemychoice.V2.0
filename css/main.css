@@ -48,10 +48,6 @@ body, html {
 .jumbotron{font-size:15px;color:black;padding:2rem 1rem;margin-bottom:1rem;background-color:grey;border-radius:.3rem}
 
 .jumbotron-fluid{padding-right:0;padding-left:0;border-radius:0}
-a {
- text-decoration: none;
- color: #000;
-}
 .btn {
  font-family: Architects Daughter;
 }
@@ -61,7 +57,7 @@ h1 {
  font-family: Architects Daughter;
 }
 p {
-font-size: 3vw;
+font-size: 2.5vw;
 font-family: Architects Daughter;
 margin-left: 2vw;
 margin-right: 2vw;
@@ -97,4 +93,10 @@ h6 {
 .contain {
     width: 50vw;
     border: 5px solid lightgray;
+}
+a.order-link:hover {
+    color: mediumpurple;
+}
+a {
+    color: black;
 }
