@@ -38,12 +38,10 @@ button {
  margin-bottom: 5px;
  margin-top: 5px;
 }
-body, html {
+body {
  position:relative;
- top:0;
- bottom:0;
- left:0;
- right:0;
+ background-image: linear-gradient(to left, white, grey, pink, white);
+ color:black;
 }
 .jumbotron{font-size:15px;color:black;padding:2rem 1rem;margin-bottom:1rem;background-color:grey;border-radius:.3rem}
 
@@ -72,26 +70,17 @@ margin-right: 2vw;
     right: 10px; 
    }
    .imgr {
-    width: 25%; 
+    width: 29%; 
     height: auto;
     float: right;
-    position: relative; 
-    top: -5vw; 
-    right: 10px;
-    margin-right: 4vw; 
+    position: relative;
+    top: 5vw;
+    right: -27vw; 
    }
    .imgr:hover {
        height: auto;
        width: 30%;
    }
-   .vl {
-    border-left: 6px dashed gray;
-    height: 500px;
-    position: absolute;
-    left: 60%;
-    margin-left: -3px;
-    margin-top: -8vw;
-  }
 .buton {
  margin-right: -10px;
  object-position: right top;
@@ -116,7 +105,7 @@ h6 {
     border: 5px solid lightgray;
 }
 a.order-link:hover {
-    color: mediumpurple;
+    color: grey;
 }
 a {
     color: black;
