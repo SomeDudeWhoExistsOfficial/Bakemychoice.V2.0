@@ -50,34 +50,39 @@
      </div>  
                  <button class="bln">
                   <img class="img imgs" src="images/general/general1.jpg" width="350">
-     <script>
-      var boyPics = [
-      "images/general/general1.jpg",
-      "images/general/general2.jpg"
-     ]
-         var textt = [
-        "Image 1",
-        "Image 2"
-         ]
-     
-     var btn = document.querySelector('.bln');
-     var img = document.querySelector('.img');
-     var txt = document.getElementById('txt');
-     var counter = 1;
-     var textCounter = 1;
-     btn.addEventListener('click', function() {
-        img.src = boyPics[counter]
-        counter = counter + 1;
-        if (counter == 2) {
-          counter = 0;
-        }
-        txt.textContent = textt[textCounter]
-        textCounter = textCounter + 1;
-        if (textCounter == 2) {
-          textCounter = 0;
-        }
-     
-     });
-       </script>
+                  <script>
+                    var boyPics = [
+                     "images/birthday/boy1.jpg",
+                     "images/birthday/girl1.jpg",
+                     "images/birthday/boy2.jpg"
+                   ]
+                       var textt = [
+                       "A milk chocolate and vanilla flavored Pikachu themed cake made for a birthday." ,
+                       "A unicorn themed cake made for the birthday of a close friend",
+                       "Simple vanilla blue ombre rosette smash cake, Mango flavored peppa family and barn themed cakes. Eggless chocolate cake with whipped chocolate ganache mini cup cakes. Siblings birthday celebration. Boys turning one and four.."
+                       ]
+                   
+                   var btn = document.querySelector('.bln');
+                   var img = document.querySelector('.img');
+                   var txt = document.getElementById('txt');
+                   var counter = 1;
+                   var textCounter = 1;
+                   btn.addEventListener('click', function() {
+                      img.src = boyPics[counter]
+                      counter = counter + 1;
+                      if (counter == 3) {
+                        counter = 0;
+                      }
+                   
+                   });
+                   btn.addEventListener('click', function() {
+                     txt.textContent = textt[textCounter]
+                      textCounter = textCounter + 1;
+                      if (textCounter == 3) {
+                        textCounter = 0;
+                      }
+                   
+                   });
+                     </script>
  </body>
 </html>

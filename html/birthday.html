@@ -75,7 +75,10 @@ btn.addEventListener('click', function() {
    if (counter == 3) {
      counter = 0;
    }
-   txt.textContent = textt[textCounter]
+
+});
+btn.addEventListener('click', function() {
+  txt.textContent = textt[textCounter]
    textCounter = textCounter + 1;
    if (textCounter == 3) {
      textCounter = 0;
