@@ -21,8 +21,8 @@ button {
  border-color: transparent;
 }
 .darkmode {
- background-color: black;
- color: white;
+ background-color: white;
+ color: black;
 }
 .c-title-s {
  font-size: 30px;
@@ -38,11 +38,32 @@ button {
  margin-bottom: 5px;
  margin-top: 5px;
 }
-body {
- position:relative;
- background-image: linear-gradient(to left, white, grey, pink, white);
- color:black;
-}
+:root {
+    --background: white;
+    --color: #2b2b2b;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--color);
+  }
+
+  .darko {
+    --background: #2b2b2b;
+    --color: white;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #2b2b2b;
+      --color: white;
+    }
+  }
+
+  .light {
+    --background: white;
+    --color: #2b2b2b;
+  }
 .jumbotron{font-size:15px;color:black;padding:2rem 1rem;margin-bottom:1rem;background-color:grey;border-radius:.3rem}
 
 .jumbotron-fluid{padding-right:0;padding-left:0;border-radius:0}
@@ -57,8 +78,6 @@ h1 {
 p {
 font-size: 2.5vw;
 font-family: Architects Daughter;
-margin-left: 2vw;
-margin-right: 2vw;
 }
 .img {
     border: 5px solid lightgray;
@@ -76,6 +95,8 @@ margin-right: 2vw;
     position: relative;
     top: 5vw;
     right: -27vw; 
+    border-radius: 20px;
+    border: 5px solid pink;
    }
    .imgr:hover {
        height: auto;
@@ -102,7 +123,6 @@ h6 {
 }
 .contain {
     width: 50vw;
-    border: 5px solid lightgray;
 }
 a.order-link:hover {
     color: grey;
@@ -113,4 +133,25 @@ a {
 }
 h2 {
     font-family: Architects Daughter;
+}
+.wrapper {
+    width: 50vw;
+    margin-left: 2vw;
+    word-wrap: break-word;
+}
+.form-control {
+    background-color:aliceblue;
+    color: pink;
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
 }
