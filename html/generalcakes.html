@@ -46,20 +46,18 @@
      </nav>
      <h1 class="page-height" style="margin-left: 2vw;margin-top:20px; margin-bottom: 15px;">General(Themed) Cakes:</h1>
      <div class="contain">
-                 <p style="margin-left: 2vw;"  id="txt">Image 1</p>
+                 <p style="margin-left: 2vw;"  id="txt">A a kool</p>
      </div>  
                  <button class="bln">
                   <img class="img imgs" src="images/general/general1.jpg" width="350">
                   <script>
                     var boyPics = [
-                     "images/birthday/boy1.jpg",
-                     "images/birthday/girl1.jpg",
-                     "images/birthday/boy2.jpg"
+                     "images/general/general1.jpg",
+                     "images/general/general2.jpg"
                    ]
                        var textt = [
-                       "A milk chocolate and vanilla flavored Pikachu themed cake made for a birthday." ,
-                       "A unicorn themed cake made for the birthday of a close friend",
-                       "Simple vanilla blue ombre rosette smash cake, Mango flavored peppa family and barn themed cakes. Eggless chocolate cake with whipped chocolate ganache mini cup cakes. Siblings birthday celebration. Boys turning one and four.."
+                       "A a kool" ,
+                       "A cool cake #2",
                        ]
                    
                    var btn = document.querySelector('.bln');
@@ -70,7 +68,7 @@
                    btn.addEventListener('click', function() {
                       img.src = boyPics[counter]
                       counter = counter + 1;
-                      if (counter == 3) {
+                      if (counter == 2) {
                         counter = 0;
                       }
                    
@@ -78,7 +76,7 @@
                    btn.addEventListener('click', function() {
                      txt.textContent = textt[textCounter]
                       textCounter = textCounter + 1;
-                      if (textCounter == 3) {
+                      if (textCounter == 2) {
                         textCounter = 0;
                       }
                    
