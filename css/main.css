@@ -142,7 +142,7 @@ h2 {
 }
 .form-control {
     background-color:aliceblue;
-    color: pink;
+    color: grey;
 }
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
