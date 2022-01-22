@@ -51,35 +51,27 @@
                     </div>
                 </li>
             </nav>
-                <form id="reg-form">
-                    <input type=text id="username" placeholder="Username" />
-                    <input type="password" id="password" placeholder="Password" />
-                    <input type="submit" value="Submit Form" />
-                </form>
-
-                <script>
-                    const form = document.getElementById('reg-form')
-                    form.addEventListener('submit', registerUser)
-
-                    async function registerUser(event) {
-                        event.preventDefault()
-                        const username = document.getElementById('username').value
-                        const password = document.getElementById('password').value
-
-                        const result = await fetch('/api/register' , {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json'
-                            },
-                            body: JSON.stringify({
-                                username,
-                                password
-                            })
-                        }).then((res) => res.json())
-                        console.log(result);
-                    }
-                </script>
-
+            <div class="signup-form">
+                <center>
+                    <div class="incorrect_message">Incorrect Email/Password</div>
+                <h2 style="margin-top: 2vw;margin-bottom: 3vw;">Sign Up</h2>
+                <form id="my-form">
+                <div style="width: 50vw;" class="form-group">
+                    <input type="email" class="form-control" name="Email:" placeholder="Your Email" required="required">
+                </div>
+                <div style="width: 50vw;margin-top: 3vw" class="form-group">
+                    <input type="text" class="form-control" name="Username" placeholder="Username" required="required">
+                </div>
+                <div style="margin-top: 3vw;width: 50vw;" class="form-group">
+                    <input type="text" class="form-control" name="# Of Cakes:" placeholder="Password" required="required">
+                </div> 
+                <div class="form-group"style="margin-top: 3vw;margin-bottom:2vw;">
+                    <button onClick="aa();" type="submit" class="btn btn-light btn-lg">Sign Up</button>
+                </div>
+            </form>
+            </center>
+        </div>
+        </center>
     
 </body>
 

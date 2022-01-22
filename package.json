@@ -1,13 +1,33 @@
 {
- "name": "bakemychoice-socket",
- "version": "0.0.2",
- "description": "bakemychoice with socket",
- "dependencies": {
-  "body-parser": "^1.19.1",
-  "bootstrap": "^5.1.1",
-  "express": "^4.17.2",
-  "fs": "^0.0.1-security",
-  "socket.io": "^4.2.0",
-  "yarn": "^1.22.17"
- }
+  "name": "bakemychoice-final",
+  "version": "0.1.0",
+  "main": "server.js",
+  "description": "BakeMyChoice final version!",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "bootstrap": "^5.1.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "fs": "^0.0.1-security",
+    "mongoose": "^6.1.7",
+    "socket.io": "^4.2.0",
+    "yarn": "^1.22.17"
+  },
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SomeDudeWhoExistsOfficial/html.git"
+  },
+  "author": "SomeDudeWhoExists",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SomeDudeWhoExistsOfficial/html/issues"
+  },
+  "homepage": "https://github.com/SomeDudeWhoExistsOfficial/html#readme",
+  "devDependencies": {
+    "dotenv": "^14.2.0",
+    "nodemon": "^2.0.15"
+  }
 }
