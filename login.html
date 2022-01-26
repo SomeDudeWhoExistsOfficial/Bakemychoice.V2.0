@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<!--CLEANUP CODE SPACE-->
+
+<head>    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BakeMyChoice</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/e.png" width="16" height="16" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="canonical" href="https://rocketsocket-website.systemdevelopers.repl.co/public/index.html">
+    <script src="server.js"></script>
+</head>
+
+<!--CLEANUP CODE SPACE-->
+
+<body>
+
+    <!--NAVBAR START-->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand navbarMods bigmargin" href="index.html">BakeMyChoice</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cakes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item dr-item" href="html/birthday.html">Birthday Cakes</a>
+                        <a class="dropdown-item dr-item" href="html/generalcakes.html">General Cakes</a>
+                        <a class="dropdown-item dr-item" href="html/wedding.html">Wedding Cakes</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Social
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item dr-item"
+                            href="https://www.facebook.com/CustomCakesNcupcakes/">Facebook</a>
+                    </div>
+                </li>
+            </nav>
+
+            <!--END NAVBAR-->
+            
+            
+            <!-- 
+                BELOW IS THE LOGIN FORM
+             -->
+            
+            
+            <div class="" id="loginForm">
+                <center>
+                    <div class="incorrect_message form_message"></div>
+                <h2 style="margin-top: 1.5vw;margin-bottom: 1.5vw;">Log In</h2>
+                <form id="creat">
+                <div style="width: 50vw;" class="form-group">
+                    <input type="email" class="form-control" name="Email:" placeholder="Your Email" required="required">
+                    <div style="margin-top: 1.5vw" class="form-hidden form__input-error-message">This is an error message</div>
+                </div>
+                <div style="margin-top: 1.5vw;width: 50vw;" class="form-group">
+                    <input type="text" class="form-control" name="# Of Cakes:" placeholder="Password" required="required">
+                    <div style="margin-top: 1.5vw" class="form__input-error-message form-hidden">This is an error message</div>
+                </div> 
+                <div class="form-group"style="margin-top: 1.5vw;margin-bottom:1.5vw;">
+                    <button type="submit" class="btn btn-light btn-lg">Log In</button>
+                </div>
+            </form>
+                <center>
+            <a href="#" id="linkCreateAccount" style="color: grey;">
+                <p href="#" id="linkCreateAccount" class="form_text">
+                    Don't have an account?
+                </p>
+            </a>
+            </center>
+        </div>
+
+
+            <!-- 
+                END OF THE LOGIN FORM 
+            -->
+        
+            <!-- 
+                START OF THE SIGNUP FORM 
+            -->
+
+            <div class="form-hidden" id="createAccount">
+                <center>
+                    <h2 style="margin-top: 1.5vw;margin-bottom: 1.5vw;">Sign Up</h2>
+                <form id="creat">
+                <div style="width: 50vw;" class="form-group">
+                    <input type="email" class="form-control" name="Email:" placeholder="Your Email" required="required">
+                    <div style="margin-top: 1.5vw" class="form-hidden input-error-msg">This is an error message</div>
+                </div>
+                <div style="width: 50vw;margin-top: 1.5vw" class="form-group">
+                    <input id="signupUsername" type="text" class="form-control" name="Username" placeholder="Username" required="required">
+                    <div style="margin-top: 1.5vw" class="input-error-msg"></div>
+                </div>
+                <div style="margin-top: 1.5vw;width: 50vw;" class="form-group">
+                    <input type="text" class="form-control" autofocus name="# Of Cakes:" placeholder="Password" required="required">
+                    <div style="margin-top: 1.5vw" class="form-hidden input-error-msg">This is an error message</div>
+                </div> 
+                <div style="margin-top: 1.5vw;width: 50vw;" class="form-group">
+                    <input type="text" class="form-control" autofocus name="# Of Cakes:" placeholder="Confirm Password" required="required">
+                    <div style="margin-top: 1.5vw" class="form-hidden input-error-msg">This is an error message</div>
+                </div> 
+                <div class="form-group"style="margin-top: 1.5vw;margin-bottom:1.5vw;">
+                    <button type="submit" class="btn btn-light btn-lg">Sign Up</button>
+                </div>
+            </form>
+        </a>
+        <a href="#" id="linkLogin" style="color: grey; text-align: center;">
+            <p href="#" id="linkLogin" class="form_text">
+                Already have an account?
+            </p>
+        </a>
+        </div>
+
+            <!-- 
+                END OF THE SIGNUP FORM 
+            -->
+            <center>
+            <a href="#" style=" color: grey; margin-left: 1.2vw;">
+                <p href="#" class="form_text">
+                Forgot your password?
+                </p>
+            </a>
+            </center>
+        </body>
+    </html>

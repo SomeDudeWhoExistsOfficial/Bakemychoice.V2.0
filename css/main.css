@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@450&display=swap);
 
 .navbarMods {
  font-family: Dancing Script;
@@ -13,7 +12,7 @@
 }
 .nav-link {
  font-size: 150%;
- font-family: Architects Daughter;
+ font-family: Inter;
  margin: 5px;
 }
 button {
@@ -31,7 +30,7 @@ button {
  font-size: 20px;
 }
 .dr-item{
- font-family: Architects Daughter;
+ font-family: Inter;
  color: black;
  font-weight: bold;
  font-size: 1rem;
@@ -68,16 +67,16 @@ button {
 
 .jumbotron-fluid{padding-right:0;padding-left:0;border-radius:0}
 .btn {
- font-family: Architects Daughter;
+ font-family: Inter;
 }
 h1 {
  font-size: 4vw;
  margin-bottom: 30px;
- font-family: Architects Daughter;
+ font-family: Inter;
 }
 p {
 font-size: 2.5vw;
-font-family: Architects Daughter;
+font-family: Inter;
 }
 .img {
     border: 5px solid pink;
@@ -133,7 +132,7 @@ a {
     
 }
 h2 {
-    font-family: Architects Daughter;
+    font-family: Inter;
 }
 .wrapper {
     width: 50vw;
@@ -147,12 +146,31 @@ h2 {
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
     opacity: 1; /* Firefox */
+    font-family: Inter;
 }
 
 .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: black;
+    font-family: Inter;
 }
 
 .form-control::-ms-input-placeholder { /* Microsoft Edge */
     color: black;
+    font-family: Inter;
+}
+.incorrect_message {
+    color: red;
+}
+.form-hidden {
+    display: none;
+}
+.form__message--success {
+    color: lightgreen;
+}
+
+.form__message--error {
+    color: red;
+}
+div {
+    font-family: Inter;
 }
