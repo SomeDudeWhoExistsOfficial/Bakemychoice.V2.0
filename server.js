@@ -11,6 +11,11 @@ function setInputError(inputElement, message) {
         inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
 }
 
+function clearInputError(inputElement) {
+    inputElement.classList.remove("form__input--error");
+    inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.querySelector('#loginForm');
     const accountCreateForm = document.querySelector('#createAccount');
@@ -37,11 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
        setFormMessage(loginForm, "error", "Wrong Password / Email! Try Again.");
     });
 
-    document.querySelectorAll(".form-control").forEach(inputElement => {
+    document.querySelectorAll(".form-controll").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
-            if (e.target.id === "signupUsername" && e.target.value.length < 10) {
-                setInputError(inputElement, "Username must be at least 10 characters in length");
+            if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 5) {
+                setInputError(inputElement, "Username must be at least 5 characters in length");
             }
+
+            inputElement.addEventListener("input", e => {
+                clearInputError(inputElement);
+            });
         });
     });
 });
