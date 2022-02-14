@@ -91,16 +91,14 @@ font-family: Quintessential;
    .imgr {
     width: 29%; 
     height: auto;
-    float: right;
     position: relative;
-    top: 5vw;
-    right: -27vw; 
+    margin-left:6.5vw; 
     border-radius: 20px;
     border: 5px solid pink;
+    opacity: 0.1;
    }
    .imgr:hover {
-       height: auto;
-       width: 30%;
+       opacity: 0.9;
    }
 .buton {
  margin-right: -10px;
