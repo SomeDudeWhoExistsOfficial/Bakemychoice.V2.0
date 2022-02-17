@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Quintessential&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap);
 
+body { background-color: black; color: white;}
 .navbarMods {
  font-family: Dancing Script;
  font-size: 200%;
@@ -12,17 +13,17 @@
 }
 .nav-link {
  font-size: 150%;
- font-family: Quintessential;
+ font-family: Titillium Web;
  margin: 5px;
 }
 button {
  background-color: transparent; 
  border-color: transparent;
 }
-.darkmode {
- background-color: white;
- color: black;
-}
+.dark-body{
+    background-color: #292929;
+    color: #FFFFFF; 
+  }
 .c-title-s {
  font-size: 30px;
 }
@@ -30,53 +31,27 @@ button {
  font-size: 20px;
 }
 .dr-item{
- font-family: Quintessential;
+ font-family: Titillium Web;
  color: black;
  font-weight: bold;
  font-size: 1rem;
  margin-bottom: 5px;
  margin-top: 5px;
 }
-:root {
-    --background: white;
-    --color: #2b2b2b;
-  }
-
-  body {
-    background-color: var(--background);
-    color: var(--color);
-  }
-
-  .darko {
-    --background: #2b2b2b;
-    --color: white;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: #2b2b2b;
-      --color: white;
-    }
-  }
-
-  .light {
-    --background: white;
-    --color: #2b2b2b;
-  }
 .jumbotron{font-size:15px;color:black;padding:2rem 1rem;margin-bottom:1rem;background-color:grey;border-radius:.3rem}
 
 .jumbotron-fluid{padding-right:0;padding-left:0;border-radius:0}
 .btn {
- font-family: Quintessential;
+ font-family: Titillium Web;
 }
 h1 {
  font-size: 4vw;
  margin-bottom: 30px;
- font-family: Quintessential;
+ font-family: Titillium Web;
 }
 p {
-font-size: 2.5vw;
-font-family: Quintessential;
+font-size: 3vw;
+font-family: Titillium Web;
 }
 .img {
     border: 5px solid pink;
@@ -89,13 +64,13 @@ font-family: Quintessential;
     border-radius: 20px;   
    }
    .imgr {
-    width: 29%; 
+    width: 50%; 
     height: auto;
     position: relative;
     margin-left:6.5vw; 
     border-radius: 20px;
     border: 5px solid pink;
-    opacity: 0.1;
+    opacity: 0.4;
    }
    .imgr:hover {
        opacity: 0.9;
@@ -130,7 +105,7 @@ a {
     
 }
 h2 {
-    font-family: Quintessential;
+    font-family: Titillium Web;
 }
 .wrapper {
     width: 50vw;
@@ -144,17 +119,17 @@ h2 {
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
     opacity: 1; /* Firefox */
-    font-family: Quintessential;
+    font-family: Titillium Web;
 }
 
 .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: black;
-    font-family: Quintessential;
+    font-family: Titillium Web;
 }
 
 .form-control::-ms-input-placeholder { /* Microsoft Edge */
     color: black;
-    font-family: Quintessential;
+    font-family: Titillium Web;
 }
 .incorrect_message {
     color: red;
@@ -170,5 +145,5 @@ h2 {
     color: red;
 }
 div {
-    font-family: Quintessential;
+    font-family: Titillium Web;
 }
