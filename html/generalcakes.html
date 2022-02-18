@@ -2,16 +2,15 @@
 <html lang="en">
   <head>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/change-theme.min.js"></script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/change-theme.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="index">
     <title>BakeMyChoice</title>
     <link rel="shortcut icon" type="image/jpg" href="images/e.png" width="16" height="16"/>
-  <script src="js/bootstrap.min.js"></script>
-  
+  <script src="../js/bootstrap.min.js"></script>
    </head>
  <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -50,9 +49,9 @@
                  <p style="margin-left: 2vw;"  id="txt">A vanilla cake.</p>
      </div>  
                  <button class="bln">
-                  <img class="img imgs" src="images/general/general1.jpg" width="350">
-                  <script>
-                    var boyPics = [
+                  <img class="img" src="images/general/general1.jpg" width="350">
+<script>
+      var boyPics = [
                      "images/general/general1.jpg",
                      "images/general/general2.jpg"
                    ]
@@ -63,24 +62,25 @@
                   var btn = document.querySelector('.bln');
                    var img = document.querySelector('.img');
                    var txt = document.getElementById('txt');
-                   var counter = 1;
-                   var textCounter = 1;
-                   btn.addEventListener('click', function() {
+             var counter = 1;
+             var textCounter = 1;
+              btn.addEventListener('click', function() {
                       img.src = boyPics[counter]
-                      counter = counter + 1;
-                      if (counter == 2) {
-                        counter = 0;
-                      }
+                    counter = counter + 1;
+                if (counter == 2) {
+                  counter = 0;
+                }
                    
-                   });
-                   btn.addEventListener('click', function() {
-                     txt.textContent = textt[textCounter]
-                      textCounter = textCounter + 1;
-                      if (textCounter == 2) {
-                        textCounter = 0;
-                      }
+             });
+            btn.addEventListener('click', function() {
+                 txt.textContent = textt[textCounter]
+                 textCounter = textCounter + 1;
+                if (textCounter == 2) {
+               textCounter = 0;
+        }
                    
-                   });
-                     </script>
+      });
+</script>
+<link rel="stylesheet" href="../css/main.css">
  </body>
 </html>
